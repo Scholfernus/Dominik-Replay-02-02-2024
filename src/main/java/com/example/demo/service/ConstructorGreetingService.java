@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import com.example.demo.repository.GreetingRepository;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ConstructorGreetingService implements GreetingRepository {
+
+    @Override
+    public String sayGreeting() {
+        return "Wstrzykiwanie przez konstruktor";
+    }
+}
